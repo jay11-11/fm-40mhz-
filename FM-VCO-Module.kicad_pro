@@ -1,0 +1,17 @@
+(kicad_project
+  (host_version "8.0.0")
+  (name "FM-VCO-Module")
+  (title "FM Transmitter Voltage Controlled Oscillator")
+  (description "Voltage controlled FM transmitter module using BB910 varactor diode")
+  (resolution "mil" 10)
+  (common
+    (name "~GND")
+    (name "~VSS")
+  )
+  (net
+    (net 1 "+9V")
+    (net 2 "GND")
+    (net 3 "CTRL_VOLTAGE")
+    (net 4 "VARACTOR_K")
+  )
+)

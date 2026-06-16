@@ -1,0 +1,94 @@
+(kicad_sch (version 20230121)
+
+  (uuid "87654321-4321-4321-4321-210987654321")
+
+  (paper "A4")
+
+  (title_block
+    (title "FM Transmitter VCO Control Module")
+    (date "2026-06-16")
+    (rev "1.0")
+    (company "FM Transmitter Project")
+    (comment 1 "Voltage Controlled Oscillator using BB910 Varactor Diode")
+    (comment 2 "Frequency Range: ±2-5MHz adjustable")
+    (comment 3 "Control Voltage: 0-8.5V DC")
+    (comment 4 "Input: 9V Power, Output: Variable Control Voltage")
+  )
+
+  (lib_symbols
+    (symbol "Device:R"
+      (pin_numbers hide)
+      (pin_names (offset 0.254))
+      (property "Reference" "R" (at 2.032 0 90))
+      (property "Value" "R" (at 0 0 90))
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
+          (stroke (width 0.254)) (fill (type none))
+        )
+      )
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+        (pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+      )
+    )
+
+    (symbol "Device:C"
+      (pin_numbers hide)
+      (pin_names (offset 0.254))
+      (property "Reference" "C" (at 0.635 2.54 0))
+      (property "Value" "C" (at 0.635 -2.54 0))
+      (symbol "C_0_1"
+        (polyline (pts (xy -2.032 -0.762) (xy 2.032 -0.762)) (stroke (width 0.508)))
+        (polyline (pts (xy -2.032 0.762) (xy 2.032 0.762)) (stroke (width 0.508)))
+      )
+      (symbol "C_1_1"
+        (pin passive line (at 0 3.81 270) (length 3.048) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+        (pin passive line (at 0 -3.81 90) (length 3.048) (name "~" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+      )
+    )
+
+    (symbol "Device:D_Varactor"
+      (pin_numbers hide)
+      (pin_names (offset 1.016))
+      (property "Reference" "D" (at 0 2.54 0))
+      (property "Value" "D_Varactor" (at 0 -2.54 0))
+      (symbol "D_Varactor_0_1"
+        (polyline (pts (xy -1.27 1.27) (xy -1.27 -1.27)) (stroke (width 0.254)))
+        (polyline (pts (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)) (stroke (width 0.254)))
+        (polyline (pts (xy -0.635 -1.905) (xy 0.635 -1.905)) (stroke (width 0.254)))
+        (polyline (pts (xy -0.635 1.905) (xy 0.635 1.905)) (stroke (width 0.254)))
+      )
+      (symbol "D_Varactor_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) (name "K" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "1" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+        (pin passive line (at 3.81 0 180) (length 2.54) (name "A" (effects (font (size 1.27 1.27) (thickness 0.15)))) (number "2" (effects (font (size 1.27 1.27) (thickness 0.15)))))
+      )
+    )
+  )
+
+  (junction (at 50.8 50.8) (diameter 0) (color 0 0 0 0))
+  (junction (at 50.8 35.56) (diameter 0) (color 0 0 0 0))
+  (junction (at 50.8 22.86) (diameter 0) (color 0 0 0 0))
+  (junction (at 76.2 50.8) (diameter 0) (color 0 0 0 0))
+  (junction (at 76.2 35.56) (diameter 0) (color 0 0 0 0))
+  (junction (at 93.98 50.8) (diameter 0) (color 0 0 0 0))
+
+  (wire (pts (xy 20.32 50.8) (xy 30.48 50.8)) (stroke (width 0) (type default)))
+  (wire (pts (xy 30.48 50.8) (xy 30.48 43.18)) (stroke (width 0) (type default)))
+  (wire (pts (xy 30.48 35.56) (xy 50.8 35.56)) (stroke (width 0) (type default)))
+  (wire (pts (xy 50.8 50.8) (xy 50.8 43.18)) (stroke (width 0) (type default)))
+  (wire (pts (xy 50.8 50.8) (xy 76.2 50.8)) (stroke (width 0) (type default)))
+  (wire (pts (xy 50.8 35.56) (xy 50.8 27.94)) (stroke (width 0) (type default)))
+  (wire (pts (xy 50.8 35.56) (xy 76.2 35.56)) (stroke (width 0) (type default)))
+  (wire (pts (xy 50.8 20.32) (xy 50.8 22.86)) (stroke (width 0) (type default)))
+  (wire (pts (xy 50.8 22.86) (xy 76.2 22.86)) (stroke (width 0) (type default)))
+  (wire (pts (xy 76.2 50.8) (xy 76.2 43.18)) (stroke (width 0) (type default)))
+  (wire (pts (xy 76.2 35.56) (xy 76.2 27.94)) (stroke (width 0) (type default)))
+  (wire (pts (xy 76.2 22.86) (xy 76.2 20.32)) (stroke (width 0) (type default)))
+  (wire (pts (xy 76.2 50.8) (xy 93.98 50.8)) (stroke (width 0) (type default)))
+  (wire (pts (xy 93.98 50.8) (xy 93.98 43.18)) (stroke (width 0) (type default)))
+  (wire (pts (xy 93.98 20.32) (xy 93.98 22.86)) (stroke (width 0) (type default)))
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

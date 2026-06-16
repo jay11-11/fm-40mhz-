@@ -1,0 +1,11 @@
+Reference,Value,Package,Quantity,Description
+J1,Power Connector,2-Pin Header,1,9V Power Input
+J2,Output Connector,2-Pin Header,1,Control Voltage Output
+J3,GND Connector,2-Pin Header,1,Ground Connection
+R1,100K,1/4W Resistor,1,Voltage Divider - Limit Current
+R2,100K,Potentiometer (Linear),1,Variable Voltage Adjustment
+R3,10K,1/4W Resistor,1,Filter Network Resistor
+C1,10uF,Electrolytic Capacitor,1,Low Pass Filter (16V Rating)
+D1,BB910,SMD0805 or DIP,1,Varactor Diode - FM Tuning
+Misc,PCB,50x30mm,1,Custom PCB Board
+Misc,Wires,22AWG,As needed,Interconnect Wires
